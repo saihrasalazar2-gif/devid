@@ -1,7 +1,4 @@
-"""
-Telegram Bot wrapper for XEI Device ID Tools — aiohttp edition (FIXED).
-Rename your original script to `mlbb_core.py` in the same folder.
-"""
+
 from __future__ import annotations
 import asyncio
 import os
@@ -26,10 +23,10 @@ from mlbb_core import (
 # ==========================================
 # Config
 # ==========================================
-BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "YOUR_BOT_TOKEN_HERE")
+BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "9241586061:AAGm6Cbi4RnD64eCVEIwveQK-7WKVjX9ye0")
 ALLOWED_USERS: set = set()
-if os.environ.get("TG_ALLOWED_USERS"):
-    ALLOWED_USERS = {int(x) for x in os.environ["TG_ALLOWED_USERS"].split(",") if x.strip().isdigit()}
+if os.environ.get("9071386675"):
+    ALLOWED_USERS = {int(x) for x in os.environ["9071386675"].split(",") if x.strip().isdigit()}
 
 RESULTS_DIR = "tg_results"
 os.makedirs(RESULTS_DIR, exist_ok=True)
